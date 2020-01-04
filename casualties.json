@@ -1,100 +1,100 @@
 {
   "Entente Powers": [
     {
-      "Country": "Great Britain and Ireland",
+      "Country": "British Empire",
       "Population": 46100000,
-      "Mobilized Soldiers": 6100000,
-      "Dead Soldiers": 750000,
+      "Mobilized Soldiers": 8904467,
+      "Dead Soldiers": 908371,
       "Dead Civilians": 600000,
-      "Total Dead": 1350000
+      "Total Dead": 1508371
     },
     {
       "Country": "Belgium",
       "Population": 7600000,
-      "Mobilized Soldiers": 292000,
-      "Dead Soldiers": 38000,
+      "Mobilized Soldiers": 267000,
+      "Dead Soldiers": 13716,
       "Dead Civilians": 50000,
-      "Total Dead": 88000
+      "Total Dead": 63716
     },
     {
       "Country": "France",
       "Population": 39000000,
-      "Mobilized Soldiers": 8100000,
-      "Dead Soldiers": 1327000,
+      "Mobilized Soldiers": 8410000,
+      "Dead Soldiers": 1357800,
       "Dead Civilians": 600000,
-      "Total Dead": 1927000
+      "Total Dead": 1957800
     },
     {
       "Country": "Greece",
       "Population": 4900000,
-      "Mobilized Soldiers": 449000,
-      "Dead Soldiers": 25000,
+      "Mobilized Soldiers": 230000,
+      "Dead Soldiers": 5000,
       "Dead Civilians": 0,
-      "Total Dead": 25000
+      "Total Dead": 5000
     },
     {
       "Country": "Italy",
       "Population": 36000000,
-      "Mobilized Soldiers": 4300000,
-      "Dead Soldiers": 460000,
+      "Mobilized Soldiers": 5615000,
+      "Dead Soldiers": 650000,
       "Dead Civilians": 700000,
-      "Total Dead": 1160000
+      "Total Dead": 1350000
     },
     {
       "Country": "Japan",
       "Population": 53000000,
-      "Mobilized Soldiers": 30000,
-      "Dead Soldiers": 1000,
+      "Mobilized Soldiers": 800000,
+      "Dead Soldiers": 300,
       "Dead Civilians": 0,
-      "Total Dead": 1000
+      "Total Dead": 300
     },
     {
       "Country": "Montenegro",
       "Population": 200000,
       "Mobilized Soldiers": 50000,
-      "Dead Soldiers": 13000,
+      "Dead Soldiers": 3000,
       "Dead Civilians": 0,
-      "Total Dead": 13000
+      "Total Dead": 3000
     },
     {
       "Country": "Portugal",
       "Population": 6100000,
       "Mobilized Soldiers": 100000,
-      "Dead Soldiers": 7000,
+      "Dead Soldiers": 7222,
       "Dead Civilians": 0,
-      "Total Dead": 7000
+      "Total Dead": 7222
     },
     {
       "Country": "Romania",
       "Population": 7600000,
       "Mobilized Soldiers": 750000,
-      "Dead Soldiers": 250000,
+      "Dead Soldiers": 335706,
       "Dead Civilians": 300000,
-      "Total Dead": 550000
+      "Total Dead": 635706
     },
     {
       "Country": "Russia",
       "Population": 164000000,
-      "Mobilized Soldiers": 15800000,
-      "Dead Soldiers": 2000000,
+      "Mobilized Soldiers": 12000000,
+      "Dead Soldiers": 1700000,
       "Dead Civilians": 500000,
-      "Total Dead": 2500000
+      "Total Dead": 2200000
     },
     {
       "Country": "Serbia",
       "Population": 3100000,
-      "Mobilized Soldiers": 750000,
-      "Dead Soldiers": 275000,
+      "Mobilized Soldiers": 707343,
+      "Dead Soldiers": 45000,
       "Dead Civilians": 300000,
-      "Total Dead": 575000
+      "Total Dead": 345000
     },
     {
       "Country": "United States of America",
       "Population": 98800000,
-      "Mobilized Soldiers": 2100000,
-      "Dead Soldiers": 117000,
+      "Mobilized Soldiers": 4355000,
+      "Dead Soldiers": 116516,
       "Dead Civilians": 0,
-      "Total Dead": 117000
+      "Total Dead": 116516
     },
     {
       "Country": "Australia",
@@ -117,27 +117,31 @@
     {
       "Country": "Austro-Hungarian Empire",
       "Population": 52600000,
-      "Dead Soldiers": 1460000,
+      "Mobilized Soldiers": 7800000,
+      "Dead Soldiers": 1200000,
       "Dead Civilians": 400000,
-      "Total Dead": 1860000
+      "Total Dead": 1600000
     },
     {
       "Country": "Bulgaria",
       "Population": 4700000,
-      "Dead Soldiers": 88000,
+      "Mobilized Soldiers": 1200000,
+      "Dead Soldiers": 87500,
       "Dead Civilians": 300000,
-      "Total Dead": 388000
+      "Total Dead": 387500
     },
     {
       "Country": "Germany",
       "Population": 67800000,
-      "Dead Soldiers": 2037000,
+      "Mobilized Soldiers": 11000000,
+      "Dead Soldiers": 1773700,
       "Dead Civilians": 700000,
-      "Total Dead": 2737000
+      "Total Dead": 2473700
     },
     {
       "Country": "Turkey",
       "Population": 17300000,
+      "Mobilized Soldiers": 2850000,
       "Dead Soldiers": 325000,
       "Dead Civilians": 2000000,
       "Total Dead": 2325000

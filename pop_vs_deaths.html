@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>D3 Page Template</title>
+    <script type="text/javascript" src="d3.js"></script>
+    <style type='text/css'>
+      div.bar {
+      display: inline-block;
+      width: 20px;
+      height: 75px;   /* We'll override height later */
+      background-color: teal;
+      margin-right: 2px;
+    }
+    </style>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var w = 1200;
+      var h = 1400;
+      var barPadding = 5;
+      var entente_dataset;
+      var central_dataset;
+      var full_dataset;
+
+      d3.json("casualties.json").then(function(data) {
+        entente_dataset = data['Entente Powers']
+        central_dataset = data['Central Powers']
+        full_dataset = entente_dataset.concat(central_dataset)
+        // console.log(data);
+
+      var svg = d3.select('body')
+                  .append('svg')
+                  .attr('width', w)
+                  .attr('height', h);
+
+      svg.selectAll('circle')
+        .data(entente_dataset)
+        .enter()
+        .append('circle')
+        .attr('cx', function(d) {return Math.round(d['Population'] / 164000);})
+        .attr('cy', function(d) {return Math.round(d['Mobilized Soldiers'] / 15000);})
+        .attr('r', function(d) {return Math.round(Math.sqrt(d['Dead Soldiers'] / 1000));});
+
+      svg.selectAll('text')
+        .data(entente_dataset)
+        .enter()
+        .append('text')
+        .text(function(d) {return d['Country'];})
+        .attr('x', function(d) {return Math.round(d['Population'] / 164000);})
+        .attr('y', function(d) {return Math.round(d['Mobilized Soldiers'] / 15000);});
+
+      });
+    </script>
+  </body>
+</html>

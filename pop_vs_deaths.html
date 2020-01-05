@@ -24,6 +24,10 @@
         font-size: 14px;
         fill: teal;
     }
+
+    circle:hover {
+      fill:orange
+    }
     </style>
   </head>
   <body>
@@ -69,6 +73,10 @@
                   .attr('width', w)
                   .attr('height', h);
 
+      function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+
       svg.selectAll('circle')
         .data(full_dataset)
         .enter()
@@ -76,7 +84,12 @@
         .attr('cx', function(d) {return xScale(d['Population']);})
         .attr('cy', function(d) {return yScale(d['Mobilized Soldiers']);})
         .attr('r', function(d) {return aScale(d['Dead Soldiers']);})
-        .attr('fill', 'green');
+        .attr('fill', 'green')
+        .filter(function(d) {return d['Mobilized Soldiers'] > 10000000;})
+        .attr('fill', 'yellow')
+        .append('title')
+        .text(function(d) {return d['Country'] + ' lost ' + numberWithCommas(d['Dead Soldiers']) + ' soldiers.'});
+
 
       svg.selectAll('text')
         .data(full_dataset)
@@ -116,6 +129,9 @@
           .style('font-weight', 'bold')
           .style('font-size', '20px')
           .text('Mobilized Soldiers');
+
+    var majorPowers = svg.selectAll('circle').filter(function(d) {return d['Mobilized Soldiers'] > 1000000})
+                      .style('color', 'yellow');
 
       d3.select('p.entente')
         .on('click', function() {
